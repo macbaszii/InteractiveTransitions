@@ -14,19 +14,19 @@
     return @[
              [[OZAnimal alloc] initWithTitle:@"Animal 1"
                                  description:@"Drumstick cow beef fatback turkey boudin. Meatball leberkas boudin hamburger pork belly fatback."
-                                    andImage:[UIImage imageNamed:@"thing01"]],
+                                    andImage:[UIImage imageNamed:@"thing01.jpg"]],
              [[OZAnimal alloc] initWithTitle:@"Animal 2"
                                  description:@"Shank pastrami sirloin, sausage prosciutto spare ribs kielbasa tri-tip doner."
-                                    andImage:[UIImage imageNamed:@"thing02"]],
+                                    andImage:[UIImage imageNamed:@"thing02.jpg"]],
              [[OZAnimal alloc] initWithTitle:@"Animal 3"
                                  description:@"Frankfurter cow filet mignon short loin ham hock salami meatloaf biltong andouille bresaola prosciutto."
-                                    andImage:[UIImage imageNamed:@"thing03"]],
+                                    andImage:[UIImage imageNamed:@"thing03.jpg"]],
              [[OZAnimal alloc] initWithTitle:@"Animal 4"
                                  description:@"Pastrami sausage turkey shank shankle corned beef."
-                                    andImage:[UIImage imageNamed:@"thing04"]],
+                                    andImage:[UIImage imageNamed:@"thing04.jpg"]],
              [[OZAnimal alloc] initWithTitle:@"Animal 5"
                                  description:@"Tri-tip short loin pork belly, pastrami biltong ball tip ham hock. Shoulder ribeye turducken shankle."
-                                    andImage:[UIImage imageNamed:@"thing05"]]
+                                    andImage:[UIImage imageNamed:@"thing05.jpg"]]
              ];
 }
 

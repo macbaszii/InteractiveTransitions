@@ -19,10 +19,10 @@
             </objects>
             <point key="canvasLocation" x="106" y="256"/>
         </scene>
-        <!--First View Controller-->
+        <!--View Controller-->
         <scene sceneID="dQM-rX-hgp">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="q59-LF-4Su" customClass="DSLFirstViewController" sceneMemberID="viewController">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="q59-LF-4Su" customClass="OZViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="9cd-hR-629">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,7 +34,7 @@
                             <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DSLThingCell" id="sGt-KM-irp" customClass="DSLThingCell">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OZAnimalCell" id="sGt-KM-irp" customClass="OZAnimalCell">
                                 <rect key="frame" x="0.0" y="74" width="155" height="183"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -56,7 +56,9 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="Jzo-pp-KwB" kind="push" id="8GH-no-zFw"/>
+                                    <outlet property="imageView" destination="wut-QQ-pjd" id="tWT-VT-OFa"/>
+                                    <outlet property="titleLabel" destination="mTJ-q1-vBZ" id="YpB-zF-F5B"/>
+                                    <segue destination="Jzo-pp-KwB" kind="push" identifier="OZCollectionViewToDetail" id="8GH-no-zFw"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -71,13 +73,13 @@
             </objects>
             <point key="canvasLocation" x="649" y="256"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="BBd-HE-ri5">
             <objects>
-                <viewController id="Jzo-pp-KwB" customClass="DSLSecondViewController" sceneMemberID="viewController">
+                <viewController id="Jzo-pp-KwB" customClass="OZDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Bt7-jZ-4eW"/>
-                        <viewControllerLayoutGuide type="bottom" id="4b0-XO-h0d"/>
+                        <viewControllerLayoutGuide type="top" id="YDn-2T-nWv"/>
+                        <viewControllerLayoutGuide type="bottom" id="479-Qn-4Pj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hmO-vH-nvM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -86,10 +88,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nOi-1D-jsU">
                                 <rect key="frame" x="60" y="104" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="qCy-Tp-mVo"/>
-                                    <constraint firstAttribute="width" constant="200" id="sEn-Db-fRS"/>
-                                </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="x0F-cG-TSZ" userLabel="Detail label">
                                 <rect key="frame" x="60" y="312" width="200" height="20"/>
@@ -100,14 +98,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="x0F-cG-TSZ" secondAttribute="trailing" constant="60" id="9WW-Ci-SKV"/>
-                            <constraint firstItem="nOi-1D-jsU" firstAttribute="top" secondItem="hmO-vH-nvM" secondAttribute="top" constant="104" id="Hru-9o-Oc6"/>
-                            <constraint firstItem="x0F-cG-TSZ" firstAttribute="top" secondItem="nOi-1D-jsU" secondAttribute="bottom" constant="8" id="VGI-W8-Qzx"/>
-                            <constraint firstItem="x0F-cG-TSZ" firstAttribute="leading" secondItem="hmO-vH-nvM" secondAttribute="leading" constant="60" id="ZKY-UA-t8D"/>
-                            <constraint firstItem="nOi-1D-jsU" firstAttribute="leading" secondItem="hmO-vH-nvM" secondAttribute="leading" constant="60" id="h8C-3k-jBf"/>
+                            <constraint firstAttribute="centerX" secondItem="nOi-1D-jsU" secondAttribute="centerX" id="7lB-4b-2rg"/>
+                            <constraint firstAttribute="trailing" secondItem="x0F-cG-TSZ" secondAttribute="trailing" constant="60" id="GbM-Th-FHb"/>
+                            <constraint firstItem="nOi-1D-jsU" firstAttribute="top" secondItem="YDn-2T-nWv" secondAttribute="bottom" constant="40" id="LXQ-gB-IkQ"/>
+                            <constraint firstItem="x0F-cG-TSZ" firstAttribute="top" secondItem="nOi-1D-jsU" secondAttribute="bottom" constant="8" id="QQc-QT-wUt"/>
+                            <constraint firstItem="x0F-cG-TSZ" firstAttribute="leading" secondItem="hmO-vH-nvM" secondAttribute="leading" constant="60" id="YFv-jW-8Dp"/>
+                            <constraint firstAttribute="trailing" secondItem="nOi-1D-jsU" secondAttribute="trailing" constant="60" id="cL8-4U-CXf"/>
+                            <constraint firstItem="479-Qn-4Pj" firstAttribute="top" secondItem="nOi-1D-jsU" secondAttribute="bottom" constant="264" id="kre-dQ-RC7"/>
+                            <constraint firstItem="nOi-1D-jsU" firstAttribute="leading" secondItem="hmO-vH-nvM" secondAttribute="leading" constant="60" id="xtT-T0-f8y"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cGo-MR-cLW"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="x0F-cG-TSZ" id="8Tk-bV-tVN"/>
+                        <outlet property="imageView" destination="nOi-1D-jsU" id="vUg-rV-wDE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJS-z3-nzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

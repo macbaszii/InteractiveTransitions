@@ -1,5 +1,5 @@
 //
-//  OZViewController.h
+//  OZDetailViewController.h
 //  InteractiveTransition
 //
 //  Created by Kiattisak Anoochitarom on 5/28/2557 BE.
@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OZViewController : UICollectionViewController
+@class OZAnimal;
+
+@interface OZDetailViewController : UIViewController
+
+@property (nonatomic, weak) OZAnimal *animal;
 
 @end

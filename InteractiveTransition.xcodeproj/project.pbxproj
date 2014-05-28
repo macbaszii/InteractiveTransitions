@@ -27,6 +27,8 @@
 		DD4998FA1935CCED002F065F /* thing04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD4998F51935CCED002F065F /* thing04.jpg */; };
 		DD4998FB1935CCED002F065F /* thing05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD4998F61935CCED002F065F /* thing05.jpg */; };
 		DD4998FE1935CD07002F065F /* OZAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4998FD1935CD07002F065F /* OZAnimal.m */; };
+		DD4999011935D0CB002F065F /* OZAnimalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4999001935D0CB002F065F /* OZAnimalCell.m */; };
+		DD4999041935D350002F065F /* OZDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4999031935D350002F065F /* OZDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,10 @@
 		DD4998F61935CCED002F065F /* thing05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing05.jpg; sourceTree = "<group>"; };
 		DD4998FC1935CD07002F065F /* OZAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZAnimal.h; sourceTree = "<group>"; };
 		DD4998FD1935CD07002F065F /* OZAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZAnimal.m; sourceTree = "<group>"; };
+		DD4998FF1935D0CB002F065F /* OZAnimalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZAnimalCell.h; sourceTree = "<group>"; };
+		DD4999001935D0CB002F065F /* OZAnimalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZAnimalCell.m; sourceTree = "<group>"; };
+		DD4999021935D350002F065F /* OZDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZDetailViewController.h; sourceTree = "<group>"; };
+		DD4999031935D350002F065F /* OZDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,10 @@
 				DD4998CF1935CC95002F065F /* Main.storyboard */,
 				DD4998D21935CC95002F065F /* OZViewController.h */,
 				DD4998D31935CC95002F065F /* OZViewController.m */,
+				DD4999021935D350002F065F /* OZDetailViewController.h */,
+				DD4999031935D350002F065F /* OZDetailViewController.m */,
+				DD4998FF1935D0CB002F065F /* OZAnimalCell.h */,
+				DD4999001935D0CB002F065F /* OZAnimalCell.m */,
 				DD4998D51935CC95002F065F /* Images.xcassets */,
 				DD4998FC1935CD07002F065F /* OZAnimal.h */,
 				DD4998FD1935CD07002F065F /* OZAnimal.m */,
@@ -275,7 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4999011935D0CB002F065F /* OZAnimalCell.m in Sources */,
 				DD4998FE1935CD07002F065F /* OZAnimal.m in Sources */,
+				DD4999041935D350002F065F /* OZDetailViewController.m in Sources */,
 				DD4998CA1935CC95002F065F /* main.m in Sources */,
 				DD4998D41935CC95002F065F /* OZViewController.m in Sources */,
 				DD4998CE1935CC95002F065F /* OZAppDelegate.m in Sources */,
