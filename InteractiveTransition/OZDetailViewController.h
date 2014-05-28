@@ -12,6 +12,8 @@
 
 @interface OZDetailViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UIImageView *imageView;
+
 @property (nonatomic, weak) OZAnimal *animal;
 
 @end

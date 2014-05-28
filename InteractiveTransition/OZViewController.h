@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class OZAnimalCell;
+@class OZAnimal;
+
 @interface OZViewController : UICollectionViewController
+
+- (OZAnimalCell *)collectionViewCellForAnimal:(OZAnimal *)animal;
 
 @end

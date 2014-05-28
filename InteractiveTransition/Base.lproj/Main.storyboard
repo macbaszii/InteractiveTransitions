@@ -88,6 +88,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nOi-1D-jsU">
                                 <rect key="frame" x="60" y="104" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="bDz-Vd-XyZ"/>
+                                    <constraint firstAttribute="width" constant="200" id="eAN-sU-9Mg"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="x0F-cG-TSZ" userLabel="Detail label">
                                 <rect key="frame" x="60" y="312" width="200" height="20"/>
@@ -98,9 +102,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="nOi-1D-jsU" secondAttribute="centerX" id="7lB-4b-2rg"/>
                             <constraint firstAttribute="trailing" secondItem="x0F-cG-TSZ" secondAttribute="trailing" constant="60" id="GbM-Th-FHb"/>
-                            <constraint firstItem="nOi-1D-jsU" firstAttribute="top" secondItem="YDn-2T-nWv" secondAttribute="bottom" constant="40" id="LXQ-gB-IkQ"/>
                             <constraint firstItem="x0F-cG-TSZ" firstAttribute="top" secondItem="nOi-1D-jsU" secondAttribute="bottom" constant="8" id="QQc-QT-wUt"/>
                             <constraint firstItem="x0F-cG-TSZ" firstAttribute="leading" secondItem="hmO-vH-nvM" secondAttribute="leading" constant="60" id="YFv-jW-8Dp"/>
                             <constraint firstAttribute="trailing" secondItem="nOi-1D-jsU" secondAttribute="trailing" constant="60" id="cL8-4U-CXf"/>
