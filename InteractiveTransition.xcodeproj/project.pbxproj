@@ -21,6 +21,12 @@
 		DD4998DF1935CC95002F065F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4998C11935CC95002F065F /* UIKit.framework */; };
 		DD4998E71935CC95002F065F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD4998E51935CC95002F065F /* InfoPlist.strings */; };
 		DD4998E91935CC95002F065F /* InteractiveTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4998E81935CC95002F065F /* InteractiveTransitionTests.m */; };
+		DD4998F71935CCED002F065F /* thing01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD4998F21935CCED002F065F /* thing01.jpg */; };
+		DD4998F81935CCED002F065F /* thing02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD4998F31935CCED002F065F /* thing02.jpg */; };
+		DD4998F91935CCED002F065F /* thing03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD4998F41935CCED002F065F /* thing03.jpg */; };
+		DD4998FA1935CCED002F065F /* thing04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD4998F51935CCED002F065F /* thing04.jpg */; };
+		DD4998FB1935CCED002F065F /* thing05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD4998F61935CCED002F065F /* thing05.jpg */; };
+		DD4998FE1935CD07002F065F /* OZAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4998FD1935CD07002F065F /* OZAnimal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,13 @@
 		DD4998E41935CC95002F065F /* InteractiveTransitionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InteractiveTransitionTests-Info.plist"; sourceTree = "<group>"; };
 		DD4998E61935CC95002F065F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD4998E81935CC95002F065F /* InteractiveTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractiveTransitionTests.m; sourceTree = "<group>"; };
+		DD4998F21935CCED002F065F /* thing01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing01.jpg; sourceTree = "<group>"; };
+		DD4998F31935CCED002F065F /* thing02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing02.jpg; sourceTree = "<group>"; };
+		DD4998F41935CCED002F065F /* thing03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing03.jpg; sourceTree = "<group>"; };
+		DD4998F51935CCED002F065F /* thing04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing04.jpg; sourceTree = "<group>"; };
+		DD4998F61935CCED002F065F /* thing05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing05.jpg; sourceTree = "<group>"; };
+		DD4998FC1935CD07002F065F /* OZAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZAnimal.h; sourceTree = "<group>"; };
+		DD4998FD1935CD07002F065F /* OZAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZAnimal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +131,8 @@
 				DD4998D21935CC95002F065F /* OZViewController.h */,
 				DD4998D31935CC95002F065F /* OZViewController.m */,
 				DD4998D51935CC95002F065F /* Images.xcassets */,
+				DD4998FC1935CD07002F065F /* OZAnimal.h */,
+				DD4998FD1935CD07002F065F /* OZAnimal.m */,
 				DD4998C41935CC95002F065F /* Supporting Files */,
 			);
 			path = InteractiveTransition;
@@ -126,6 +141,11 @@
 		DD4998C41935CC95002F065F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DD4998F21935CCED002F065F /* thing01.jpg */,
+				DD4998F31935CCED002F065F /* thing02.jpg */,
+				DD4998F41935CCED002F065F /* thing03.jpg */,
+				DD4998F51935CCED002F065F /* thing04.jpg */,
+				DD4998F61935CCED002F065F /* thing05.jpg */,
 				DD4998C51935CC95002F065F /* InteractiveTransition-Info.plist */,
 				DD4998C61935CC95002F065F /* InfoPlist.strings */,
 				DD4998C91935CC95002F065F /* main.m */,
@@ -230,8 +250,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD4998D61935CC95002F065F /* Images.xcassets in Resources */,
+				DD4998FB1935CCED002F065F /* thing05.jpg in Resources */,
+				DD4998F71935CCED002F065F /* thing01.jpg in Resources */,
+				DD4998FA1935CCED002F065F /* thing04.jpg in Resources */,
+				DD4998F81935CCED002F065F /* thing02.jpg in Resources */,
 				DD4998C81935CC95002F065F /* InfoPlist.strings in Resources */,
 				DD4998D11935CC95002F065F /* Main.storyboard in Resources */,
+				DD4998F91935CCED002F065F /* thing03.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4998FE1935CD07002F065F /* OZAnimal.m in Sources */,
 				DD4998CA1935CC95002F065F /* main.m in Sources */,
 				DD4998D41935CC95002F065F /* OZViewController.m in Sources */,
 				DD4998CE1935CC95002F065F /* OZAppDelegate.m in Sources */,
